@@ -1,0 +1,53 @@
+#form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form-box {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .hidden {
+    display: none;
+}
+
+.btn-form {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 2;
+    border-radius: 50%;
+    background-color: #ff9900;
+    border: none;
+    font-size: large;
+    color: white;
+    box-shadow: 0px 104px 41px rgba(3, 26, 48, 0.04), 0px 58px 35px rgba(3, 26, 48, 0.13), 0px 26px 26px rgba(3, 26, 48, 0.22), 0px 6px 14px rgba(3, 26, 48, 0.26), 0px 0px 0px rgba(3, 26, 48, 0.26);
+}
+
+.dropdown{
+    position: fixed;
+    top: 160px; 
+    left: 12px; 
+    z-index: 2;
+}
+
+.btn-dropdown {
+    width: 30px;
+    height: 30px; 
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+
+.btn-marker-id{
+    font-size: 50%;
+    margin-left: -30%;
+    padding-right: -5%;
+    height: 10%;
+}
+  
+  

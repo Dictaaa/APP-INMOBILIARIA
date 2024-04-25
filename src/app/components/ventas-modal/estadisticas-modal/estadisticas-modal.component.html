@@ -1,0 +1,24 @@
+<table mat-table [dataSource]="statisticsData" class="custom-table">
+
+    <!--- Column Definition -->
+    <ng-container matColumnDef="month">
+      <th mat-header-cell *matHeaderCellDef> MES </th>
+      <td mat-cell *matCellDef="let element"> {{element.month}} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="quantity">
+      <th mat-header-cell *matHeaderCellDef> CANTIDAD<br/> DE INMUEBLES </th>
+      <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="totalSale">
+        <th mat-header-cell *matHeaderCellDef> TOTAL DE VENTA </th>
+        <td mat-cell *matCellDef="let element"> {{ formatTotalSale(element.totalSale) }} </td>
+      </ng-container>
+      
+      
+    <!--- Table Rows -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  

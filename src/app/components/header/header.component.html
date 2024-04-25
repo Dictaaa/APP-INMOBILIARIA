@@ -1,0 +1,11 @@
+
+<div>
+    <button mat-raised-button  (click)="openComprasModal()">Compras</button>
+    <button mat-raised-button  (click)="openVentasModal()">Ventas</button>
+</div>
+<div *ngIf="showVentasModal">
+    <app-ventas-modal></app-ventas-modal>
+</div>
+<div *ngIf="showComprasModal">
+    <app-compras-modal></app-compras-modal>
+</div>

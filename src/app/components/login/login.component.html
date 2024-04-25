@@ -1,0 +1,17 @@
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre de usuario</mat-label>
+      <input matInput formControlName="username" placeholder="Ingresa tu nombre de usuario">
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill">
+      <mat-label>Contraseña</mat-label>
+      <input matInput type="password" formControlName="password" placeholder="Ingresa tu contraseña">
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Iniciar sesión</button>
+  
+    <!-- Mostrar error -->
+    <div *ngIf="loginError" class="error-message">{{ loginError }}</div>
+  </form>
+  

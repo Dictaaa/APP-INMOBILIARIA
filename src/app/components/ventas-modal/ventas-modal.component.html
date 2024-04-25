@@ -1,0 +1,6 @@
+<div>
+    <button mat-raised-button  (click)="openEstadisticasModal()">Estadisticas</button>
+</div>
+<div *ngIf="showEstadisticasModal">
+    <app-estadisticas-modal></app-estadisticas-modal>
+</div>
